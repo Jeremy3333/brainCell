@@ -38,7 +38,7 @@ void Connection::updateWeight(const double learningRate) {
     }
 
     // Mise à jour du poids
-    weight -= learningRate * deltaWeight;
+    weight += learningRate * deltaWeight;
 
     // Optionnel : réinitialiser deltaWeight après la mise à jour
     deltaWeight = 0.0;
