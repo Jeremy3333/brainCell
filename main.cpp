@@ -1,8 +1,10 @@
+
 #include <iostream>
 #include <cassert> // Pour les tests assert
+#include <SDL2/SDL.h>
 #include "Model/World/Brain/Connection.h" // Inclusion du header de la classe Connection
 
-int main() {
+int SDL_main(int argc, char* argv[]) {
   // Test 1 : Initialisation par défaut
     const Connection conn1;
   std::cout << "Test 1: Initialisation par défaut\n";
@@ -42,8 +44,9 @@ int main() {
 
 /*
 #include "Controller/Controller.h"
+#include <SDL2/SDL.h>
 
-int main() {
+int SDL_main(int argc, char* argv[]) {
     Controller controller;
     controller.loop();
     return 0;
