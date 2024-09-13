@@ -4,7 +4,7 @@ project(test)
 set(CMAKE_CXX_STANDARD 20)
 
 # Specify the path to SDL2Config.cmake
-set(CMAKE_PREFIX_PATH "C:/SDL2/lib/cmake/SDL2")
+# set(CMAKE_PREFIX_PATH "C:/SDL2/lib/cmake/SDL2")
 
 # Find SDL2 library
 find_package(SDL2 REQUIRED)
@@ -24,8 +24,6 @@ add_executable(test main.cpp
         Model/World/Food.cpp
         Model/World/Food.h
         Model/World/Utils.cpp
-        Model/World/Utils.h
-        Model/World/Brain/Connection.h
-        Model/World/Brain/Connection.cpp)
+        Model/World/Utils.h)
 
 target_link_libraries(test ${SDL2_LIBRARIES})
